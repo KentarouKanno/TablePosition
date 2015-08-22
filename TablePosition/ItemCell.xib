@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemCell" id="hdc-8s-Ohe" customClass="ItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hdc-8s-Ohe" id="YtP-19-t33">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section = 0,Row = 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDq-Tx-2HM">
+                        <rect key="frame" x="21" y="8" width="202" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="202" id="8O1-q9-wKw"/>
+                            <constraint firstAttribute="height" constant="28" id="TI5-Kz-ciV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lza-yc-CX0">
+                        <rect key="frame" x="502" y="7" width="66" height="30"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="13t-G0-Cs4"/>
+                            <constraint firstAttribute="height" constant="30" id="Ouc-B4-78j"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="changeStatus:" destination="hdc-8s-Ohe" eventType="touchUpInside" id="AFk-Kv-kOc"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rDq-Tx-2HM" firstAttribute="leading" secondItem="YtP-19-t33" secondAttribute="leading" constant="21" id="2cd-dP-wcB"/>
+                    <constraint firstItem="lza-yc-CX0" firstAttribute="top" secondItem="YtP-19-t33" secondAttribute="top" constant="7" id="33C-Mk-WLM"/>
+                    <constraint firstItem="rDq-Tx-2HM" firstAttribute="top" secondItem="YtP-19-t33" secondAttribute="top" constant="8" id="92c-Wb-bd8"/>
+                    <constraint firstAttribute="trailing" secondItem="lza-yc-CX0" secondAttribute="trailing" constant="32" id="MmW-hK-lum"/>
+                    <constraint firstAttribute="bottom" secondItem="lza-yc-CX0" secondAttribute="bottom" constant="7" id="QSb-KU-mDI"/>
+                    <constraint firstAttribute="bottom" secondItem="rDq-Tx-2HM" secondAttribute="bottom" constant="8" id="gRW-wU-Bm4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkButton" destination="lza-yc-CX0" id="ota-HB-gyC"/>
+                <outlet property="titleLabel" destination="rDq-Tx-2HM" id="mi8-dM-Th6"/>
+            </connections>
+            <point key="canvasLocation" x="485" y="295"/>
+        </tableViewCell>
+    </objects>
+</document>
